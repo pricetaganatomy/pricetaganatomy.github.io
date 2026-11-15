@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connecting TikTok</title>
+<style>body { font: 17px/1.6 system-ui, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 16px; color: #111; background: #fff; }</style>
+</head>
+<body>
+<h1>Connecting TikTok</h1>
+<p id="msg">Returning you to the Price Tag Anatomy publishing tool on this computer...</p>
+<script>
+  var q = location.search;
+  if (/[?&](code|error)=/.test(q)) {
+    location.replace("http://127.0.0.1:8773/tiktok/callback" + q);
+  } else {
+    document.getElementById("msg").textContent = "Nothing to do here. You can close this page.";
+  }
+</script>
+</body>
+</html>
